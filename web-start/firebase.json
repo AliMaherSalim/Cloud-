@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "./public",
+    "port" :5004,
+    "headers": [{
+      "source" : "**/*.@(js|html)",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=0"
+        
+             
+      } ]
+      
+    }]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+  
+}
+
+
